@@ -6,8 +6,8 @@ require __DIR__ . '/../vendor/autoload.php';
 use Automattic\WooCommerce\Client;
 
 // Define las claves de la API de WooCommerce
-$consumer_key    = 'ck_9f614b3a23266982537042ecd33555551f03e686';
-$consumer_secret = 'cs_da56f608ae29c4e52c397e11df758fd178d7506e';
+$consumer_key    = 'ck_1f11ce0d6ed2db83fa9fe951f02858c341128c58';
+$consumer_secret = 'cs_50e6914c714bbfe9917f33526960454c6d945467';
 
 try {
     // Crea una nueva instancia del cliente de WooCommerce
@@ -22,7 +22,7 @@ try {
 
     // Leer los IDs de pedido y cliente desde archivos
     $order_ids = file('order_ids.txt', FILE_IGNORE_NEW_LINES);
-    $order_id = $order_ids[1];
+    $order_id = $order_ids[0];
 
     $customer_ids = file('../Customers/customer_ids.txt', FILE_IGNORE_NEW_LINES);
     $customer_id = $customer_ids[0];
